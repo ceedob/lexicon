@@ -7,6 +7,7 @@ from urllib2 import	urlopen
 url = "http://scrabblehelper.googlecode.com/svn-history/r20/trunk/ScrabbleHelper/src/dictionaries/sowpods.txt"
 url = "http://www.mieliestronk.com/corncob_lowercase.txt"
 download = urlopen(url)
+download = open("dict-short.txt") # from http://www.mieliestronk.com/corncob_lowercase.txt
 
 #download = StringIO(download.read())
 #download = GzipFile(fileobj=download)
